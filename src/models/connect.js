@@ -13,4 +13,5 @@ const sequelize = new Sequelize("node38_food", "root", "1234", {
 //     console.log("Kết nối thất bại!");
 // }
 
+
 export default sequelize;
