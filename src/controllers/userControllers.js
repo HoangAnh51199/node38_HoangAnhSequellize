@@ -15,8 +15,10 @@ const getLike = async (req, res) => {
 
 const deleteLike = async (req, res) => {
     try {
-        let { UserId, ResId } = req.params;
-        console.log(req)
+         let { UserId, ResId } = req.params;
+        // const UserId = req.query.userId;
+        // const ResId = req.query.resId;
+        console.log(UserId,ResId)
         await conn.like_res.destroy({
             where: {
                 user_id: UserId,
